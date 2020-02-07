@@ -23,4 +23,8 @@ export class SolarYearCalculator {
     let convertToMarsYears = parseFloat(ageInEarthYears/marsYearPerEarthYear).toFixed(2);
     return Number(convertToMarsYears);
   }
+
+  convertAgeToJupiterYears() {
+
+  }
 }

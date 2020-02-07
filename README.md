@@ -29,6 +29,10 @@ _The purpose of this application is to detemine a user's age based on a planet's
   * Input: Create person with age of 20 and call convertAgeToMarsYears 
   * Output: return 10.64
 
+* _Spec: The application should be able to return a persons age in jupiter equivalent years._
+  * Input: Create person with age of 20 and call convertAgeToJupiterYears 
+  * Output: return 1.69
+
 ## Setup/Installation Requirements
 _Clone this repository._
 _npm install_
