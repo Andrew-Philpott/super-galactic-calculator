@@ -1,6 +1,7 @@
 export class Person {
-  constructor(age) {
+  constructor(age, gender) {
     this.age = age;
+    this.gender = gender
   }
   
   getAge() {
