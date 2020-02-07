@@ -27,7 +27,16 @@ export class SolarYearCalculator {
     return Number(convertAgeToJupiterYears);
   }
 
-  getPersonsAgeInNonEarthYearsForPlanet() {
-    
+  getPersonsAgeInNonEarthYearsForPlanet(planet) {
+    let age = this.person.getAge();
+    let ageInNonEarthPlanetYears;
+    switch (planet) {
+      case 'Mercury':
+        ageInNonEarthPlanetYears = this.convertEarthYearsToMercuryYears(age);
+        break;
+      default:
+        break;
+    }
+    return ageInNonEarthPlanetYears;
   }
 }
