@@ -3,4 +3,7 @@ export class SolarYearCalculator {
    this.person = person;
   }
 
+  convertAgeToMercuryYears() {
+
+  }
 }
