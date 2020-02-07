@@ -25,6 +25,9 @@ export class SolarYearCalculator {
   }
 
   convertAgeToJupiterYears() {
-
+    let ageInEarthYears = this.person.getAge();
+    const jupiterYearPerEarthYear = 11.86;
+    let convertAgeToJupiterYears = parseFloat(ageInEarthYears/jupiterYearPerEarthYear).toFixed(2);
+    return Number(convertAgeToJupiterYears);
   }
 }
