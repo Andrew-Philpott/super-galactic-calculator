@@ -8,7 +8,11 @@ _The purpose of this application is to detemine a user's age based on a planet's
 * _Spec: The application should be able to create a person object with an age in human years._
   * Input: age 20
   * Output: age 20
-  
+
+* _Spec: The application should be able to create a SolarYearCalculator object with its person property equal to the person object passed into the constructor._
+  * Input: Pass in person age 20
+  * Output: Return same person
+
 ## Setup/Installation Requirements
 _Clone this repository._
 _npm install_
