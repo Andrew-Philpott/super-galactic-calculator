@@ -49,8 +49,14 @@ export class SolarYearCalculator {
     return ageInNonEarthPlanetYears;
   }
   
-  getPersonsLifeExpectancyInNonEarthYearsForPlanet() {
-
+  getPersonsLifeExpectancyInNonEarthYearsForPlanet(planet) {
+    let lifeExpectancy = this.person.getLifeExpectancy();
+    let lifeExpectancyInNonEarthYears;
+    switch (planet) {
+      case 'Mercury':
+        lifeExpectancyInNonEarthYears = this.convertEarthYearsToMercuryYears(lifeExpectancy);
+        break;
+    }
+    return lifeExpectancyInNonEarthYears
   }
-
 }
