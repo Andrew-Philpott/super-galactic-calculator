@@ -11,12 +11,12 @@ describe('SolarYearCalculator', () => {
     expect(person).toEqual(personFromCalculator);
   });
 
-  test('should correctly convert the stored person object age to a number with 2 decimal points derived from the persons age divided by .24 and rounding to the nearest whole number for the second digit', () => {
-    let person = new Person(20);
-    let calculator = new SolarYearCalculator(person);
-    let personObjectsAgeInMercuryYears = 83.33;
+  test('should correctly convert the Earth years number to a number with 2 decimal points derived from the earth years number divided by .24 and rounding to the nearest whole number for the second digit', () => {
+    let earthYears = 20;
+    let calculator = new SolarYearCalculator();
+    let earthYearsToMercuryYears = 83.33;
 
-    expect(calculator.convertAgeToMercuryYears()).toEqual(personObjectsAgeInMercuryYears);
+    expect(calculator.convertEarthYearsToMercuryYears(earthYears)).toEqual(earthYearsToMercuryYears);
   });
 
   test('should correctly convert the stored person object age to a number with 2 decimal points derived from the persons age divided by .62 and rounding to the nearest whole number for the second digit', () => {
@@ -34,7 +34,7 @@ describe('SolarYearCalculator', () => {
 
     expect(calculator.convertAgeToMarsYears()).toEqual(personsObjectAgeInMarsYears);
   });
-  
+
   test('should correctly convert the stored person object age to a number with 2 decimal points derived from the persons age divided by 11.86 and rounding to the nearest whole number for the second digit', () => {
     let person = new Person(20);
     let calculator = new SolarYearCalculator(person);

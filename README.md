@@ -45,6 +45,9 @@ _The purpose of this application is to detemine a user's age based on a planet's
   * Input: Create person that is Female
   * Output: Life expectancy is 80.1 years
 
+* _Spec: The application should be able to return the life expectancy of the 
+  * Input: Create person that is Female
+  * Output: Life expectancy is 80.1 years
 ## Setup/Installation Requirements
 _Clone this repository._
 _npm install_

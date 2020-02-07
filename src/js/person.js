@@ -9,10 +9,13 @@ export class Person {
       this.lifeExpectancy = 80.1;
     }
   }
-  
+
   getAge() {
     return this.age;
   }
 
+  getLifeExpectancy() {
+    return this.lifeExpectancy;
+  }
   
 }
