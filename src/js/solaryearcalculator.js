@@ -1,5 +1,6 @@
 export class SolarYearCalculator {
-  constructor() {
-   
+  constructor(person) {
+   this.person = person;
   }
+
 }

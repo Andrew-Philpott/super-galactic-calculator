@@ -10,4 +10,6 @@ describe('SolarYearCalculator', () => {
 
     expect(person).toEqual(personFromCalculator);
   });
+
+ 
 });

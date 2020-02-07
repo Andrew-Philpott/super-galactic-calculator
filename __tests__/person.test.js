@@ -9,4 +9,12 @@ describe('Person', () => {
     let ageFromPerson = person.age;
     expect(age).toEqual(ageFromPerson);
   });
+
+  test('should correctly return a persons age', () => {
+    let age = 20;
+    let person = new Person(age);
+
+    let ageFromPerson = person.getAge();
+    expect(age).toEqual(ageFromPerson);
+  });  
 });
