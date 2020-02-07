@@ -3,11 +3,10 @@ export class SolarYearCalculator {
    this.person = person;
   }
 
-  convertEarthYearsToMercuryYears() {
-    // let ageInEarthYears = this.person.getAge();
-    // const mercuryYearPerEarthYear = .24;
-    // let convertToMercuryYears = parseFloat(ageInEarthYears/mercuryYearPerEarthYear).toFixed(2);
-    // return Number(convertToMercuryYears);
+  convertEarthYearsToMercuryYears(years) {
+    const mercuryYearPerEarthYear = .24;
+    let convertToMercuryYears = parseFloat(years/mercuryYearPerEarthYear).toFixed(2);
+    return Number(convertToMercuryYears);
   }
 
   convertAgeToVenusYears() {
