@@ -4,7 +4,7 @@ describe('Person', () => {
 
   test('should correctly create a person object with an age', () => {
     let age = 20;
-    let person = new Person();
+    let person = new Person(age);
 
     let ageFromPerson = person.age;
     expect(age).toEqual(ageFromPerson);
