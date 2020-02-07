@@ -18,6 +18,9 @@ export class SolarYearCalculator {
   }
 
   convertAgeToMarsYears() {
-    
+    let ageInEarthYears = this.person.getAge();
+    const marsYearPerEarthYear = 1.88;
+    let convertToMarsYears = parseFloat(ageInEarthYears/marsYearPerEarthYear).toFixed(2);
+    return Number(convertToMarsYears);
   }
 }
