@@ -43,4 +43,12 @@ describe('SolarYearCalculator', () => {
     expect(calculator.convertEarthYearsToJupiterYears(earthYears)).toEqual(personsObjectAgeInJupiterYears);
   });
 
+  test('Should convert a persons age to an equivalent amount of Mercury years if Mercury is passed in', () => {
+    let person = new Person(20, 'Male');
+    let calculator = new SolarYearCalculator(person);
+    let personsObjectAgeInJupiterYears = 1.69;
+    let planet = 'Mercury';
+
+    expect(calculator.getPersonsAgeInNonEarthYearsForPlanet(planet)).toEqual(83.33);
+  });
 });
