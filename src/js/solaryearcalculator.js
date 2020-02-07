@@ -11,6 +11,13 @@ export class SolarYearCalculator {
   }
 
   convertAgeToVenusYears() {
+    let ageInEarthYears = this.person.getAge();
+    const venusYearPerEarthYear = .62;
+    let convertToVenusYears = parseFloat(ageInEarthYears/venusYearPerEarthYear).toFixed(2);
+    return Number(convertToVenusYears);
+  }
 
+  convertAgeToMarsYears() {
+    
   }
 }

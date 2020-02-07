@@ -26,4 +26,12 @@ describe('SolarYearCalculator', () => {
 
     expect(calculator.convertAgeToVenusYears()).toEqual(personsObjectAgeInVenusYears);
   });
+
+  test('should correctly convert the stored person object age to a number with 2 decimal points derived from the persons age divided by 1.88 and rounding to the nearest whole number for the second digit', () => {
+    let person = new Person(20);
+    let calculator = new SolarYearCalculator(person);
+    let personsObjectAgeInMarsYears = 10.64;
+
+    expect(calculator.convertAgeToMarsYears()).toEqual(personsObjectAgeInMarsYears);
+  });
 });
