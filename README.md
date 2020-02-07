@@ -46,9 +46,16 @@ _The purpose of this application is to detemine a user's age based on a planet's
   * Output: Life expectancy is 80.1 years
 
 * _Spec: The application should be able to return the persons age in an equivalent number of non earth planet years for the non earth planet specified.
+  * Example 1:
   * Input: Persons age is 20, Mercury selected
   * Output: 83.33
-
+  * Example 2:
+  * Input: Persons age is 20, Venus selected
+  * Output: 32.26
+  * Example 3:
+  * Input: Persons age is 20, Mars selected
+  * Output: 10.64
+  
 ## Setup/Installation Requirements
 _Clone this repository._
 _npm install_
