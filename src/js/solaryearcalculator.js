@@ -23,10 +23,10 @@ export class SolarYearCalculator {
 
   convertEarthYearsToJupiterYears(years) {
     const jupiterYearPerEarthYear = 11.86;
-    let convertAgeToJupiterYears = parseFloat(years/jupiterYearPerEarthYear).toFixed(2);
-    return Number(convertAgeToJupiterYears);
+    let convertToJupitersYears = parseFloat(years/jupiterYearPerEarthYear).toFixed(2);
+    return Number(convertToJupitersYears);
   }
-
+  
   getPersonsAgeInNonEarthYearsForPlanet(planet) {
     let age = this.person.getAge();
     let ageInNonEarthPlanetYears;
@@ -48,4 +48,9 @@ export class SolarYearCalculator {
     }
     return ageInNonEarthPlanetYears;
   }
+  
+  getPersonsLifeExpectancyInNonEarthYearsForPlanet() {
+
+  }
+
 }

@@ -74,4 +74,13 @@ describe('SolarYearCalculator', () => {
 
     expect(calculator.getPersonsAgeInNonEarthYearsForPlanet(planet)).toEqual(1.69);
   });
+
+  test('Should convert a persons life expectancy to an equivalent amount of Mercury years if Mercury is passed in', () => {
+    let person = new Person(20, 'Male');
+    let calculator = new SolarYearCalculator(person);
+    let planet = 'Mercury';
+
+    expect(calculator.getPersonsLifeExpectancyInNonEarthYearsForPlanet(planet)).toEqual(305.83);
+  });
+
 });
