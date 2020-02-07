@@ -5,7 +5,7 @@ export class Person {
     this.lifeExpectancy;
     if(this.gender === 'Male') {
       this.lifeExpectancy = 73.4;
-    } 
+    }
   }
   
   getAge() {

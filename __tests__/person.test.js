@@ -35,4 +35,13 @@ describe('Person', () => {
     let maleLifeExpectancy = person.lifeExpectancy;
     expect(maleLifeExpectancy).toEqual(73.4);
   });
+
+  test('should set the life expectancy of a person to 80.1 years when the gender is Female', () => {
+    let age = 20;
+    let gender = 'Female';
+    let person = new Person(age, gender);
+
+    let femaleLifeExpectancy = person.lifeExpectancy;
+    expect(femaleLifeExpectancy).toEqual(80.1);
+  });
 });
