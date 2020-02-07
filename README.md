@@ -55,7 +55,10 @@ _The purpose of this application is to detemine a user's age based on a planet's
   * Example 3:
   * Input: Persons age is 20, Mars selected
   * Output: 10.64
-  
+  * Example 4:
+  * Input: Persons age is 20, Jupiter selected
+  * Output: 1.69
+
 ## Setup/Installation Requirements
 _Clone this repository._
 _npm install_

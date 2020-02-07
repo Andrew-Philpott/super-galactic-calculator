@@ -37,6 +37,9 @@ export class SolarYearCalculator {
       case 'Venus':
         ageInNonEarthPlanetYears = this.convertEarthYearsToVenusYears(age);
         break;
+      case 'Mars':
+        ageInNonEarthPlanetYears = this.convertEarthYearsToMarsYears(age);
+        break;
       default:
         break;
     }
