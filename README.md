@@ -33,6 +33,10 @@ _The purpose of this application is to detemine a user's age based on a planet's
   * Input: Create person with age of 20 and call convertAgeToJupiterYears 
   * Output: return 1.69
 
+* _Spec: The application should be able create a person object with a gender._
+  * Input: Create person with age of 20 and a gender of Male 
+  * Output: return person with age of 20 and a gender of Male
+  
 ## Setup/Installation Requirements
 _Clone this repository._
 _npm install_

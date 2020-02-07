@@ -6,4 +6,6 @@ export class Person {
   getAge() {
     return this.age;
   }
+
+  
 }
