@@ -11,11 +11,19 @@ describe('SolarYearCalculator', () => {
     expect(person).toEqual(personFromCalculator);
   });
 
-  test('should correctly convert the stored person object age to a number to 2 decimal points', () => {
+  test('should correctly convert the stored person object age to a number with 2 decimal points derived from the persons age divided by .24 and rounding to the nearest whole number for the second digit', () => {
     let person = new Person(20);
     let calculator = new SolarYearCalculator(person);
     let personObjectsAgeInMercuryYears = 83.33;
 
     expect(calculator.convertAgeToMercuryYears()).toEqual(personObjectsAgeInMercuryYears);
+  });
+
+  test('should correctly convert the stored person object age to a number with 2 decimal points derived from the persons age divided by .62 and rounding to the nearest whole number for the second digit', () => {
+    let person = new Person(20);
+    let calculator = new SolarYearCalculator(person);
+    let personsObjectAgeInVenusYears = 32.26;
+
+    expect(calculator.convertAgeToVenusYears()).toEqual(personsObjectAgeInVenusYears);
   });
 });

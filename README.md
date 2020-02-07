@@ -17,9 +17,13 @@ _The purpose of this application is to detemine a user's age based on a planet's
   * Input: Create person with age of 20 and call get age
   * Output: return 20
 
-* _Spec: The application should be able to return a persons age in mercury years._
+* _Spec: The application should be able to return a persons age in mercury equivalent years._
   * Input: Create person with age of 20 and call convertAgeToMercuryYears 
   * Output: return 83.33
+
+* _Spec: The application should be able to return a persons age in venus equivalent years._
+  * Input: Create person with age of 20 and call convertAgeToVenusYears 
+  * Output: return 32.25
 
 ## Setup/Installation Requirements
 _Clone this repository._
