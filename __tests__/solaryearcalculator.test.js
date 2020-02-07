@@ -83,4 +83,11 @@ describe('SolarYearCalculator', () => {
     expect(calculator.getPersonsLifeExpectancyInNonEarthYearsForPlanet(planet)).toEqual(305.83);
   });
 
+  test('Should convert a persons life expectancy to an equivalent amount of Venus years if Venus is passed in', () => {
+    let person = new Person(20, 'Male');
+    let calculator = new SolarYearCalculator(person);
+    let planet = 'Venus';
+
+    expect(calculator.getPersonsLifeExpectancyInNonEarthYearsForPlanet(planet)).toEqual(118.39);
+  });
 });
