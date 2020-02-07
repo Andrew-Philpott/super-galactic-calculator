@@ -1,5 +1,5 @@
 export class Person {
   constructor(age) {
-   // this.age = age;
+    this.age = age;
   }  
 }
