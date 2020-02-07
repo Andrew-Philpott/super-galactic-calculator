@@ -19,28 +19,28 @@ describe('SolarYearCalculator', () => {
     expect(calculator.convertEarthYearsToMercuryYears(earthYears)).toEqual(earthYearsToMercuryYears);
   });
 
-  test('should correctly convert the stored person object age to a number with 2 decimal points derived from the persons age divided by .62 and rounding to the nearest whole number for the second digit', () => {
-    let person = new Person(20);
-    let calculator = new SolarYearCalculator(person);
+  test('should correctly convert the Earth years number to a number with 2 decimal points derived from the earth years number divided by .62 and rounding to the nearest whole number for the second digit', () => {
+    let earthYears = 20;
+    let calculator = new SolarYearCalculator();
     let personsObjectAgeInVenusYears = 32.26;
 
-    expect(calculator.convertAgeToVenusYears()).toEqual(personsObjectAgeInVenusYears);
+    expect(calculator.convertEarthYearsToVenusYears(earthYears)).toEqual(personsObjectAgeInVenusYears);
   });
 
-  test('should correctly convert the stored person object age to a number with 2 decimal points derived from the persons age divided by 1.88 and rounding to the nearest whole number for the second digit', () => {
-    let person = new Person(20);
-    let calculator = new SolarYearCalculator(person);
+  test('should correctly convert the Earth years number to a number with 2 decimal points derived from the earth years number divided by 1.88 and rounding to the nearest whole number for the second digit', () => {
+    let earthYears = 20;
+    let calculator = new SolarYearCalculator();
     let personsObjectAgeInMarsYears = 10.64;
 
-    expect(calculator.convertAgeToMarsYears()).toEqual(personsObjectAgeInMarsYears);
+    expect(calculator.convertEarthYearsToMarsYears(earthYears)).toEqual(personsObjectAgeInMarsYears);
   });
 
-  test('should correctly convert the stored person object age to a number with 2 decimal points derived from the persons age divided by 11.86 and rounding to the nearest whole number for the second digit', () => {
-    let person = new Person(20);
-    let calculator = new SolarYearCalculator(person);
+  test('should correctly convert the Earth years number to a number with 2 decimal points derived from the earth years number divided by 11.86 and rounding to the nearest whole number for the second digit', () => {
+    let earthYears = 20;
+    let calculator = new SolarYearCalculator();
     let personsObjectAgeInJupiterYears = 1.69;
 
-    expect(calculator.convertAgeToJupiterYears()).toEqual(personsObjectAgeInJupiterYears);
+    expect(calculator.convertEarthYearsToJupiterYears(earthYears)).toEqual(personsObjectAgeInJupiterYears);
   });
 
 });

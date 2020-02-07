@@ -17,21 +17,21 @@ _The purpose of this application is to detemine a user's age based on a planet's
   * Input: Create person with age of 20 and call get age
   * Output: return 20
 
-* _Spec: The application should be able to return a persons age in mercury equivalent years._
-  * Input: Create person with age of 20 and call convertAgeToMercuryYears 
-  * Output: return 83.33
+* _Spec: The application should be able to return earth years to mercury equivalent years._
+  * Input: 20 earth years
+  * Output: return 83.33 mercury years
 
-* _Spec: The application should be able to return a persons age in venus equivalent years._
-  * Input: Create person with age of 20 and call convertAgeToVenusYears 
-  * Output: return 32.26
+* _Spec: The application should be able to return earth years to venus equivalent years._
+  * Input: 20 earth years
+  * Output: return 32.26 venus years
 
-* _Spec: The application should be able to return a persons age in mars equivalent years._
-  * Input: Create person with age of 20 and call convertAgeToMarsYears 
-  * Output: return 10.64
+* _Spec: The application should be able to return earth years to mars equivalent years._
+  * Input: 20 earth years
+  * Output: return 10.64 mars years
 
-* _Spec: The application should be able to return a persons age in jupiter equivalent years._
-  * Input: Create person with age of 20 and call convertAgeToJupiterYears 
-  * Output: return 1.69
+* _Spec: The application should be able to return earth years to jupiter equivalent years._
+  * Input: 20 earth years 
+  * Output: return 1.69 jupiter years
 
 * _Spec: The application should be able create a person object with a gender._
   * Input: Create person with age of 20 and a gender of Male 
