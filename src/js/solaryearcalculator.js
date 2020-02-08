@@ -59,6 +59,9 @@ export class SolarYearCalculator {
       case 'Venus':
         lifeExpectancyInNonEarthYears = this.convertEarthYearsToVenusYears(lifeExpectancy);
         break;
+      case 'Mars':
+        lifeExpectancyInNonEarthYears = this.convertEarthYearsToMarsYears(lifeExpectancy);
+        break;
     }
     return lifeExpectancyInNonEarthYears
   }
