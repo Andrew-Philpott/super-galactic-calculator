@@ -69,7 +69,10 @@ export class SolarYearCalculator {
     return lifeExpectancyInNonEarthYears
   }
 
-  calculateNumberOfYearsPersonHasLeftToLiveOnPlanet() {
-
+  calculateNumberOfYearsPersonHasLeftToLiveOnPlanet(planet) {
+    let convertedAge = this.getPersonsAgeInNonEarthYearsForPlanet(planet);
+    let convertedLifeExpectancy = this.getPersonsLifeExpectancyInNonEarthYearsForPlanet(planet);
+    let numberOfYearsLeftToLiveOnPlanet = convertedLifeExpectancy - convertedAge;
+    return numberOfYearsLeftToLiveOnPlanet;
   }
 }
