@@ -73,12 +73,14 @@ _The purpose of this application is to detemine a user's age based on a planet's
   * Input: Persons life expectancy is 73.4 years, Jupiter selected
   * Output: 6.19
 
-
 * _Spec: The application should notify a person that the number of years they have left to live on the planet they chose is equal to
 the difference between life expectancy and their age given the planet that was chosen when their age was less than their life expectancy.
   * Input: Person is a 20 year old Male with a life expectancy of 73.4 years
   * Output: You have 225.50 years left to live.
 
+* _Spec: The application should notify a person that they are x years older than the life expectancy.
+  * Input: Person is a 90 year old Male with a life expectancy of 73.4 years
+  * Output: You're 69.17 years older than the life expectancy.
 
 ## Setup/Installation Requirements
 _Clone this repository._

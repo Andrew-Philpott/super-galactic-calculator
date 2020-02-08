@@ -123,4 +123,13 @@ describe('SolarYearCalculator', () => {
     let message = calculator.notifyPersonOnLifeExpectationsForLivingOnPlanet(numberOfYearsToLive);
     expect(message).toEqual(`You have ${numberOfYearsToLive} years left to live.`);
   });
+
+  test('Should notify the person: \"You\'re x years older than the life expectancy.\", where x is the negative difference between life expectancy and their age given the planet that was chosen.', () => {
+    let person = new Person(90, 'Male');
+    let calculator = new SolarYearCalculator(person);
+    let planet = 'Mercury';
+    let numberOfYearsToLive = calculator.calculateNumberOfYearsPersonHasLeftToLiveOnPlanet(planet);
+    let message = calculator.notifyPersonOnLifeExpectationsForLivingOnPlanet(numberOfYearsToLive);
+    expect(message).toEqual(`You're ${numberOfYearsToLive} years older than the life expectancy.`);
+  });
 });
