@@ -98,4 +98,12 @@ describe('SolarYearCalculator', () => {
 
     expect(calculator.getPersonsLifeExpectancyInNonEarthYearsForPlanet(planet)).toEqual(39.04);
   });
+
+  test('Should convert a persons life expectancy to an equivalent amount of Jupiter years if Jupiter is passed in', () => {
+    let person = new Person(20, 'Male');
+    let calculator = new SolarYearCalculator(person);
+    let planet = 'Jupiter';
+
+    expect(calculator.getPersonsLifeExpectancyInNonEarthYearsForPlanet(planet)).toEqual(6.19);
+  });
 });
