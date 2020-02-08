@@ -78,7 +78,11 @@ export class SolarYearCalculator {
   }
   
   notifyPersonOnLifeExpectationsForLivingOnPlanet(numberOfYearsLeftToLiveOnPlanet) {
-    
+    let determineNotification = Math.sign(numberOfYearsLeftToLiveOnPlanet);
+
+    if(determineNotification === -1) {
+      return `You're ${numberOfYearsLeftToLiveOnPlanet} years older than the life expectancy.`
+    }
 
     return `You have ${numberOfYearsLeftToLiveOnPlanet} years left to live.`;
   }
