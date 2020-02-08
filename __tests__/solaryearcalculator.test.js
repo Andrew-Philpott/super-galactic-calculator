@@ -114,4 +114,13 @@ describe('SolarYearCalculator', () => {
 
     expect(calculator.calculateNumberOfYearsPersonHasLeftToLiveOnPlanet(planet)).toEqual(222.5);
   });
+
+  test('Should notify the player of the expected time they have left to live on the planet given their life expectancy. If the persons age is greater than the life expectancy then they should be notified of the number of years theyve lived past the life expectancy, otherwise it should notify them of the time they have left.', () => {
+    let person = new Person(90, 'Male');
+    let calculator = new SolarYearCalculator(person);
+    let planet = 'Mercury';
+    let numberOfYearsToLive = calculator.calculateNumberOfYearsPersonHasLeftToLiveOnPlanet(planet);
+    let message = calculator.notifyPersonOnLifeExpectationsForLivingOnPlanet(numberOfYearsToLive);
+    expect(message).toEqual(`You're ${numberOfYearsToLive} years older than the life expectancy.`);
+  });
 });

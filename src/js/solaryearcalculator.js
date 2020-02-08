@@ -72,7 +72,18 @@ export class SolarYearCalculator {
   calculateNumberOfYearsPersonHasLeftToLiveOnPlanet(planet) {
     let convertedAge = this.getPersonsAgeInNonEarthYearsForPlanet(planet);
     let convertedLifeExpectancy = this.getPersonsLifeExpectancyInNonEarthYearsForPlanet(planet);
-    let numberOfYearsLeftToLiveOnPlanet = convertedLifeExpectancy - convertedAge;
+    let numberOfYearsLeftToLiveOnPlanet = parseFloat(convertedLifeExpectancy - convertedAge).toFixed(2);
+
     return numberOfYearsLeftToLiveOnPlanet;
+  }
+  
+  notifyPersonOnLifeExpectationsForLivingOnPlanet(numberOfYearsLeftToLiveOnPlanet) {
+    let determineIfOlderThanLifeExpectancy = Math.sign(numberOfYearsLeftToLiveOnPlanet);
+    
+    if(determineIfOlderThanLifeExpectancy === -1) {
+      return `You're ${determineIfOlderThanLifeExpectancy} years older than the life expectancy.`;
+    } else {
+      return `You have ${determineIfOlderThanLifeExpectancy} years left to live on this planet.`;
+    }
   }
 }
