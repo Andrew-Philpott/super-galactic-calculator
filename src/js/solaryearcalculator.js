@@ -62,6 +62,9 @@ export class SolarYearCalculator {
       case 'Mars':
         lifeExpectancyInNonEarthYears = this.convertEarthYearsToMarsYears(lifeExpectancy);
         break;
+      case 'Jupiter':
+        lifeExpectancyInNonEarthYears = this.convertEarthYearsToJupiterYears(lifeExpectancy);
+        break;
     }
     return lifeExpectancyInNonEarthYears
   }
