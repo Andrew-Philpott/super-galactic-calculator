@@ -68,4 +68,8 @@ export class SolarYearCalculator {
     }
     return lifeExpectancyInNonEarthYears
   }
+
+  calculateNumberOfYearsPersonHasLeftToLiveOnPlanet() {
+
+  }
 }

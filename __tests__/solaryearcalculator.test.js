@@ -106,4 +106,12 @@ describe('SolarYearCalculator', () => {
 
     expect(calculator.getPersonsLifeExpectancyInNonEarthYearsForPlanet(planet)).toEqual(6.19);
   });
+
+  test('Should calculate the number of years a person has left to live on the planet in terms of the planets years', () => {
+    let person = new Person(20, 'Male');
+    let calculator = new SolarYearCalculator(person);
+    let planet = 'Mercury';
+
+    expect(calculator.calculateNumberOfYearsPersonHasLeftToLiveOnPlanet(planet)).toEqual(222.5);
+  });
 });
