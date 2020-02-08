@@ -66,7 +66,9 @@ _The purpose of this application is to detemine a user's age based on a planet's
 * Example 2:
   * Input: Persons life expectancy is 73.4 years, Venus selected
   * Output: 118.39
-
+* Example 3:
+  * Input: Persons life expectancy is 73.4 years, Mars selected
+  * Output: 39.04
 ## Setup/Installation Requirements
 _Clone this repository._
 _npm install_

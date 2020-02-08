@@ -90,4 +90,12 @@ describe('SolarYearCalculator', () => {
 
     expect(calculator.getPersonsLifeExpectancyInNonEarthYearsForPlanet(planet)).toEqual(118.39);
   });
+
+  test('Should convert a persons life expectancy to an equivalent amount of Mars years if Mars is passed in', () => {
+    let person = new Person(20, 'Male');
+    let calculator = new SolarYearCalculator(person);
+    let planet = 'Mars';
+
+    expect(calculator.getPersonsLifeExpectancyInNonEarthYearsForPlanet(planet)).toEqual(39.04);
+  });
 });
