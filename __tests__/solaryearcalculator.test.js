@@ -116,7 +116,7 @@ describe('SolarYearCalculator', () => {
   });
 
   test('Should notify the player of the expected time they have left to live on the planet given their life expectancy. The application will notify the person: \"You have x number of years left to live.\", where x is the difference between life expectancy and their age given the planet that was chosen.', () => {
-    let person = new Person(60, 'Male');
+    let person = new Person(20, 'Male');
     let calculator = new SolarYearCalculator(person);
     let planet = 'Mercury';
     let numberOfYearsToLive = calculator.calculateNumberOfYearsPersonHasLeftToLiveOnPlanet(planet);
