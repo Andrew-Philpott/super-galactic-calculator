@@ -77,7 +77,9 @@ export class SolarYearCalculator {
     return numberOfYearsLeftToLiveOnPlanet;
   }
   
-  notifyPersonOnLifeExpectationsForLivingOnPlanet() {
+  notifyPersonOnLifeExpectationsForLivingOnPlanet(numberOfYearsLeftToLiveOnPlanet) {
     
+
+    return `You have ${numberOfYearsLeftToLiveOnPlanet} years left to live.`;
   }
 }
