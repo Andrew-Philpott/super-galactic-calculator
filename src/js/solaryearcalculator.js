@@ -77,13 +77,7 @@ export class SolarYearCalculator {
     return numberOfYearsLeftToLiveOnPlanet;
   }
   
-  notifyPersonOnLifeExpectationsForLivingOnPlanet(numberOfYearsLeftToLiveOnPlanet) {
-    let determineIfOlderThanLifeExpectancy = Math.sign(numberOfYearsLeftToLiveOnPlanet);
+  notifyPersonOnLifeExpectationsForLivingOnPlanet() {
     
-    if(determineIfOlderThanLifeExpectancy === -1) {
-      return `You're ${determineIfOlderThanLifeExpectancy} years older than the life expectancy.`;
-    } else {
-      return `You have ${determineIfOlderThanLifeExpectancy} years left to live on this planet.`;
-    }
   }
 }
