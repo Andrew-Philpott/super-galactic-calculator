@@ -1,5 +1,5 @@
 # _SuperGalacticAgeCalculator_
-#### _RPG_, 02.07.2020_
+#### SuperGalacticAgeCalculator, 02.07.2020_
 #### By _**Andrew Philpott**_
 ## Description
 _The purpose of this application is to detemine a user's age based on a planet's solar years and inform them on the number of years they have left to live on each planet given the average life expectancy._
